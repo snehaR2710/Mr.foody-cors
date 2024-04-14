@@ -1,12 +1,9 @@
-import dotenv from 'dotenv'
 import express from 'express';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import cors from 'cors';
 
-dotenv.config();
-
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 3001;
 
 app.use(express.json());
 app.use(cors());
